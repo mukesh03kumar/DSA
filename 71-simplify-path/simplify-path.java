@@ -22,10 +22,6 @@ class Solution {
             ans.append("/").append(dir);
         }
 
-        if(ans.length() == 0){
-            return "/";
-        }
-
-        return ans.toString();
+        return ans.length() == 0 ? "/" : ans.toString();
     }
 }
